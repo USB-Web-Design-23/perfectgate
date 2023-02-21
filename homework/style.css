@@ -1,0 +1,50 @@
+body {
+	background-color: wheat;
+	back
+}
+h1 {
+	font-size: 45px;
+	font-style: normal;
+}
+
+ul {
+	list-style-type: none;
+	margin-left: 0;
+	margin-right:75%;
+	padding: 0;
+	width: 25%;
+	text-align: left;
+	font-size: 25px;
+}
+
+li a {
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: ghostwhite;
+	color: black;
+}
+
+.dropdown {
+	background-color: ;
+	color: black;
+	font-weight: 5;
+	font-size: 40px;
+}
+
+.dropdown-content {
+	display: none;
+	background-color: wheat;
+	color: black;
+	font-size: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
