@@ -1,0 +1,26 @@
+body {
+	background-color: wheat;
+}
+
+.dropdown {
+	background-color: wheat;
+	color: red;
+	font-weight: 5;
+	font-size: 25px;
+}
+
+.dropdown-content {
+	display: none;
+	background-color: none;
+	color: none;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.photo{;
+	;
+}
+.text { margin-right: 50%;
+}

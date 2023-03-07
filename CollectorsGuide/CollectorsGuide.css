@@ -1,0 +1,46 @@
+body {
+	font-size: 40px;
+	color: palegreen;
+	font-style: helvetica;
+	background-image: url(Tennis.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+p {
+	font-size: 16px;
+	color: darkred;
+}
+
+.McEnroe {
+	background-color: seagreen;
+	color: skyblue;
+	font-size: 25px;
+}
+
+.Williams {
+	background-color: skyblue;
+	color: seagreen;
+	font-size: 25px;
+}
+
+.Williams2 {
+	background-color: blueviolet;
+	color: palegreen;
+	font-size: 24px;
+	width: 60%;
+}
+
+table {
+	padding: 3px;
+	border: solid;
+	border-color: blueviolet;
+}
+td {
+	border: solid;
+}
+
+.Links {
+	font-size: 20px;
+	color: black;
+}
