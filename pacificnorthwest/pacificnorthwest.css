@@ -1,0 +1,156 @@
+
+
+
+
+body {
+    
+    background-color: wheat;
+}
+h1{
+text-align: center;
+font-family: fantasy;
+
+}
+.seattle {
+  width: 390px;
+  height: 250px;
+  background-image: url(seattle1.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out; 
+}
+
+.seattle:hover {
+  background-image: url(seattle2.jpg); 
+  animation-play-state: paused;
+}
+@keyframes image-animation {
+  from {
+    background-image: url(seattle1.jpg); 
+  }
+  to {
+    background-image: url(seattle2.jpg); 
+  }
+}
+.portland {
+  width: 350px;
+  height: 250px;
+  background-image: url(portland.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out; 
+}
+
+.portland:hover {
+  background-image: url(portland2.jpg); 
+  animation-play-state: paused;
+}
+@keyframes image-animation {
+  from {
+    background-image: url(portland.jpg); 
+  }
+  to {
+    background-image: url(portland2.jpg); 
+  }
+}
+.vancouver {
+  width: 390px;
+  height: 250px;
+  background-image: url(vancouver.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out; 
+}
+
+.vancouver:hover {
+  background-image: url(vancouver2.jpg); 
+  animation-play-state: paused;
+}
+@keyframes image-animation {
+  from {
+    background-image: url(vancouver1.jpg); 
+  }
+  to {
+    background-image: url(vancouver2.jpg); 
+  }
+}
+
+table{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+th{
+font-size: 24px;
+font-family: cursive;
+}
+.dropdown{
+	position: fixed;
+	background-color: white;
+  bottom: 0;
+  left: 0;
+  
+}
+
+}
+
+.dropdown-button {
+}
+
+.dropdown-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; 
+}
+.list { 
+font-size:8px;
+
+
+ }
+ .line{
+ 	background-color: darkblue;
+ 	height: 2px;
+ }
+
+.view1{
+	width: 380px;
+	height: 260px;
+}
+.view2{
+	width: 260px;
+	height: 310px;
+}
+h2{ text-align:center; 
+font-family: fantasy;}
+.context{
+	background-color: skyblue;
+	flex: 1;
+	;
+}
+.Back{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+
+}
+.button{
+
+}
+.context2{
+	background-color: lightgrey;
+}
+.line2{
+	height: 2px;
+	background-color: whitesmoke;}
+.context3{
+	background-color: darkgrey;
+}
