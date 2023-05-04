@@ -1,0 +1,166 @@
+
+.picture{text-align: left;
+}
+/*  auto margin makes the left and right margin the same*/
+ table{margin:auto;
+   border-spacing: 25px;
+}
+
+
+
+
+}
+/* define the border and attributes of table2&3*/
+ .table3{
+  text-align: center;
+  margin: auto;
+ }
+
+td {
+  margin:auto;
+
+}
+.table2{
+  border: 2px solid lightgrey;
+
+}
+
+
+.head {   animation: animation1 1s ease-in-out infinite;
+           font-size: 30px}
+/* transform animation can change the sacle of context*/
+ @keyframes animation1 {
+  0% {
+               transform: scale(1);
+        }
+ 50% {
+               transform: scale(1.07);        }
+ 100% {        transform: scale(1);
+    }
+   }
+   
+
+  
+
+/* define the font of subtitle*/
+.shortanswer {
+  animation: colorchange1 7s infinite;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px lightgrey, 2px 2px lightgrey, 3px 3px lightgrey;
+}
+/* this animation change the color of context  */
+@keyframes  colorchange1 {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #CCCC00;
+  }
+  100% {
+    color: darkblue;
+  }
+}
+
+
+
+
+
+/* Custom font face from google*/
+@font-face {
+	font-family: belwe;
+	src: url(BelweMediumBT.ttf);
+}
+body {
+	font-family: belwe;
+
+}
+
+.header {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-image: url("annieWright.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	color: whitesmoke;
+	
+	
+	
+	
+}
+h1 {
+	font-size: 40px;
+}
+/* define the attribute of table , collapse means */
+.table1 {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  border: 2px solid lightgrey;
+}
+
+.td1 {
+  width: 33.33%;
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid lightgrey;
+}
+/* THis sets the final answer to be hidden when the page launches*/
+p {
+  visibility: hidden;
+}
+/* In this table3, i add two animations on one context, first is the borderwidth which 
+can change the width of border overtime, the next animation can create the shadow arround the context*/
+.table3{text-align: center;
+  border: 0.5rem solid lightgrey;
+  animation: animation2 2s infinite ease-in-out,animation3 2s infinite ease-in-out;
+}
+@keyframes animation2 {
+   0% { border-width: 0.5rem; }
+  50% { border-width: 1rem; }
+  100% { border-width: 0.5rem; }
+}
+@keyframes animation3 {
+  0% { box-shadow: 0 0 0 green; }
+  50% { box-shadow: 0 0 20px blue; }
+  100% { box-shadow: 0 0 0 green; }
+}
+/* here is the dropdown-context part, which define the position of 
+dropdown button and dropdown context. */
+.dropdown{
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  
+}
+
+}
+
+.dropdown-button {
+}
+
+.dropdown-content {
+
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  display: none; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; 
+}
+.list { 
+font-size:15px;
+ }
+ .final{ text-align:center; font-size: 25px}
+ .picture{
+
+ }
+

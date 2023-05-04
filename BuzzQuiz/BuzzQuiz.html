@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buzz feed quiz / History of Annie Wright</title>
+	<link rel="stylesheet" type="text/css" href="BuzzQuiz.css">
+</head>
+<body>
+	<!--This section defines the header of the page and gives the title-->
+	<div class="header">
+	<br>
+	<br>
+	<h1 class="head">How Well do You Know your School?</h1>
+	<br>
+	<br>
+	<!--The page is divided into 2 types of questions.  The Short Answer Start Here-->
+	</div>
+	<br>
+	
+	<h2 class="shortanswer"> Short Answer Questions:</h2>
+	<br>
+	<br>
+	<!--This form is the for all of the question and it defines the questions -->
+	<form>
+		<!--The questions are contained in a tabel to orginize them.  They are done with label and input elements. -->
+		<table class="table1">
+		<tr>
+		<td class="td1">
+		<label for="Music">What Year was Annie Wright established?</label>
+		
+		</td>
+		<td class="td1">
+		<label for="Music">How many credits do we need to get an ib dipoma?</label>
+		
+		</td>
+		<td class="td1">
+		<label for="Music">What is the name of the Annie Wright School song?</label>
+		<!--The labels are in one row and the inputs are in the next row-->
+		<!--The inputs take in data the be used later in javascript-->
+		</td>
+		</tr>
+		<tr>
+			<!-- three short answer questions pertaining the Annie Wright.  They have a name and id corresponding to the question-->
+			<td class="td1">
+				<input type="text" name="q1" id="yearBegan">
+			</td>
+			<td class="td1">
+				<input type="text" name="q2" id="ibdiploma">
+			</td>
+			<td class="td1">
+				<input type="text" name="q3" id="song">
+			</td>
+
+
+		</tr>
+		</table>
+		<!--End of the table-->
+		
+		<br>
+		<br>
+
+
+<!--Multipe choice part of the page beings -->
+    <h2 class="shortanswer"> Mutiple Choices:</h2>
+    <br>
+    <!--In a table to orginize the questions-->
+    <table class="table2">
+    	<tr>
+    	<td>
+		<label for="music">Which of the following is the number of people in the Upper School?</label>
+		
+		<br>
+		<!--Radio questions only allow you to select one optiion with the same name-->
+		<!--There are 4 possible answers A,B,C,D-->
+		<label for="254">A:254</label>
+		<input type="radio" name="upperschool" id="254">
+		<br>
+		<label for="288">B:288</label>
+		<input type="radio" name="upperschool" id="288">
+		<br>
+		<label for="305">C:305</label>
+		<input type="radio" name="upperschool" id="305">
+		<br>
+		<label for="319">D:319</label>
+		<input type="radio" name="upperschool" id="319">
+		<br>
+		<br>
+	    </td>
+        <td>
+		<!--This question is a checkbox type meaning you can select multiple answers to the question-->
+		<!--Done in a table to orginize the questions-->
+		<label for="music">Which of the following people help found Annie Wright? (Multpile select)</label>
+		<br>
+		<label for="wright">A:Charles Barstow Wright</label>
+		<input type="checkbox" name="founder" id="wright">
+		<br>
+		<label for="mccarthy">B:Mary McCarthy</label>
+		<input type="checkbox" name="founder" id="mccarthy">
+		<br>
+		<label for="paddock">C:Reverent John Adams Paddock</label>
+		<input type="checkbox" name="founder" id="paddock">
+		<br>
+		<label for="bauska">D:Susan Bauska</label>
+		<input type="checkbox" name="founder" id="bauska">
+		<br>
+		<br>
+        </td>
+        </tr>
+        <tr>
+        <td>
+		<!--Radio question to allow for only one answer-->
+		<label for="music">Since the founding of the USB, how many Heads have there been?</label>
+		<br>
+		<label for="4">A:4</label>
+		<input type="radio" name="head" id="4">
+		<br>
+		<label for="2">B:2</label>
+		<input type="radio" name="head" id="2">
+		<br>
+		<label for="7">C:7</label>
+		<input type="radio" name="head" id="7">
+		<br>
+		<label for="3">D:3</label>
+		<input type="radio" name="head" id="3">
+	</td>
+</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		
+		<!--Name input done in a table and using the text input type to type in your name-->
+
+		<table class="table3">
+		<tr><td><label for="inpName"> Write your name below</label>
+		</td></tr>
+		<tr><td><input type="text" name="name" id="name" value="">
+		</td></tr>
+		<tr><td>
+			<!--This is the "submit button"  using the button input type.  Using the onclick function it will run a javascript function when clicked.-->
+			<input type="button" name="Submit Button" value="Click here to enter" onclick="getScore()">
+		</td></tr>
+
+		</table>
+
+        <br>
+        <br>
+
+        <br>
+        <br>
+
+
+  <!-- what's hide in the dropdown context is the reference of the webpage with link -->
+    
+  <div class="dropdown">
+  <button class="dropdown-button"> More about this webpage</button>
+  <div class="dropdown-content">
+  
+    <ul>
+      <div class="list">
+     <li><a href="https://en.wikipedia.org/wiki/Annie_Wright_Schools">https://en.wikipedia.org/wiki/Annie_Wright_Schools</a></li>
+     <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border">https://developer.mozilla.org/zh-CN/docs/Web/CSS/border</a></li>
+
+  </div>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+
+
+
+
+
+	</form>
+	<!--End of the form-->
+	<!--WHere your final score for the quiz is displayed-->
+	<p class="final" id="FinalAns">Your Score is </p>
+	<div class="picture">
+	<!-- the logo of anniewright-->
+	<img src="anniewrightschool.jpg" style="width: 500px;">
+    </div>
+
+
+</body>
+<!--the script tag distinguishes the javascript language within html.  -->
+<script type="text/javascript">
+	//the function getScore is used to keep track of the score from the quiz//
+	function getScore() {
+		//Correct is a variable that keeps track of the question you get correct//
+		var correct = 0
+		//this if statement gets the answer to the yearbegane question and if it 1884 it adds one to the correct varible.  Works the same for all the questions//
+		if (document.getElementById("yearBegan").value == 1884) {
+			correct = correct + 1
+			
+		}
+		if (document.getElementById("ibdiploma").value == 24) {
+			correct = correct + 1
+			
+		}
+		if (document.getElementById("song").value == "Alma Mater") {
+			correct = correct + 1
+			
+		}
+		//these questions check if the correct one is checked than it adds one to correct//
+		if (document.getElementById("305").checked) {
+			correct = correct + 1
+			
+		}
+		//This question each right answer is worth half a point because it is a multiple select question//
+		if (document.getElementById("wright").checked) {
+			correct = correct + 0.5
+			
+		}
+		if (document.getElementById("paddock").checked) {
+			correct = correct + 0.5
+			
+		}
+		if (document.getElementById("3").checked) {
+			correct = correct + 1
+		}
+
+
+
+
+		//Varible per calculates the percent you got right on the quiz//
+		var per = correct/6 * 100
+		//This takes the paragraph and changes the value of it to display your score using the percent and your name//
+		document.getElementById("FinalAns").innerHTML = document.getElementById("name").value + " your score is " + per + "%"
+		//This changes the style of the paragraph to be visible //
+		document.getElementById("FinalAns").style.visibility = "visible"
+		
+	}
+
+	
+
+
+	
+
+
+
+
+
+</script>
+
+
+
+
+</html>
