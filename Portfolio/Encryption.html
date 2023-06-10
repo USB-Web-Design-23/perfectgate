@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encryption</title>
+	<link rel="stylesheet" type="text/css" href="encryption.css">
+</head>
+<body>
+<h1> Encryption</h1>
+<br>
+<br>
+
+<table>
+	<tr> 
+		<td>In cryptography, encryption is the process of encoding information. This process converts the original representation of the information, known as plaintext, into an alternative form known as ciphertext. Ideally, only authorized parties can decipher a ciphertext back to plaintext and access the original information. Encryption does not itself prevent interference but denies the intelligible content to a would-be interceptor. </td>
+    
+        <!-- this is a embed video of the youtube video-->
+        <td><iframe width="450" height="250" src="https://www.youtube.com/embed/LA3fah6i-4A" title="Encryption Explained Simply | What Is Encryption? | Cryptography And Network Security | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+
+
+</tr></table>
+ <script>
+    //an encrypted function //
+    function encrypttext() {
+      var inputtext = document.getElementById('inputtext').value;
+      // simple example of a addition encryption //
+      var encryptedtext = inputtext.replace(/./g, function(char) {
+        return String.fromCharCode(char.charCodeAt(0) + 1);
+      });
+      document.getElementById('encryptedtext').value = encryptedtext;
+    }
+
+    // decryption function//
+    function decrypttext() {
+      var encryptedtext = document.getElementById('encryptedtext').value;
+      // reverse of the previous function, which is subtraction//
+      var decryptedtext = encryptedtext.replace(/./g, function(char) {
+        return String.fromCharCode(char.charCodeAt(0) - 1);
+      });
+      document.getElementById('decryptedtext').value = decryptedtext;
+    }
+  </script>
+</head>
+<body>
+  <h1>Demo</h1>
+  <br>
+  <br>
+  <p>This encryption demo shows a simple way to encryption a number, by adding 1 to each digit</p>
+
+  <div class="text">
+  	<table>
+  	<tr><td>
+  <!-- input the origin number and use button to encryption it-->
+  <label for="inputtext">Input Text:</label>
+  <input type="text" id="inputtext">
+  <button onclick="encrypttext()">Encrypt</button>
+</td></tr>
+
+  <br><br>
+  <tr><td>
+<!-- show the number been encrypted-->
+  <label for="encryptedtext">Encrypted text:</label>
+  <input type="text" id="encryptedtext" readonly>
+</td></tr>
+  <br><br>
+<tr><td>
+
+  <!-- decryption this number-->
+  <label for="decryptedtext">Decrypted text:</label>
+  <input type="text" id="decryptedtext" readonly>
+  <button onclick="decrypttext()">Decrypt</button>
+</td></tr>
+</div>
+<div class="dropdown">
+  <button class="dropdown-button"> More about this webpage</button>
+  <div class="dropdown-content">
+  
+    <ul>
+      <div class="list">
+     <li><a href="https://www.youtube.com/watch?v=LA3fah6i-4A">https://www.youtube.com/watch?v=LA3fah6i-4A</a></li>
+     <li><a href="https://en.wikipedia.org/wiki/Encryption">https://en.wikipedia.org/wiki/Encryption</a></li>
+
+  </div>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

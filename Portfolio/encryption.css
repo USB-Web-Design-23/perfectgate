@@ -1,0 +1,38 @@
+body{ background-color:wheat; }
+h1{ text-align:center; 
+    }
+.text{  display: flex;
+    justify-content: center;
+    align-items: center }
+ p{ text-align:center; }
+ .dropdown{
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  
+}
+
+}
+
+.dropdown-button {
+}
+
+.dropdown-content {
+
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  display: none; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; 
+}
+.list { 
+font-size:15px;
+ }
+ .final{ text-align:center; font-size: 25px}
+ .picture{
+
+ }

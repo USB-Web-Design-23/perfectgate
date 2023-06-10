@@ -1,0 +1,91 @@
+
+/*  this background color is copied from a website that can generate gradient color*/
+body { background-image
+	: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;}
+/*  this makes the text in middle of the webpage*/
+h1 { text-align: center; }
+p  { text-align:center; }
+/*  */
+table { border-collapse:collapse; }
+td{ padding:10px; text-align:center; }
+td img{ width:350px; height:350; }
+/* This allows a another webpage ebmbed in the current webpage, which is used to unify the style of the whole portfolio */
+.embed {   display: flex;
+          justify-content: center;
+        align-items: center; }
+/* this home button help you get back to homepage */
+.home { display: flex;
+    justify-content: center;
+    align-items: center;
+
+     }
+    /* this animation change the opacity of the title */
+@keyframes blinkAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  animation: blinkAnimation 6s infinite;
+}
+ /* this animation allows a content to bounce */
+@keyframes textBounce {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-text {
+  display: inline-block;
+  animation: textBounce 1s ease-in-out infinite;
+}
+/* define the position of the dropdown content and button */
+.dropdown-button {position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+.dropdown-content {
+
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  display: none; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; 
+}
+.list { 
+font-size:15px;
+ }
+ .final{ text-align:center; font-size: 25px}
+ .picture{
+
+ }
+
+
+
+
+
+
+
